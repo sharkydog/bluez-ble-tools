@@ -1,0 +1,27 @@
+{
+  "name": "sharkydog/bluez-ble-tools",
+  "description": "BlueZ BLE tools for PHP",
+  "keywords": ["Bluetooth", "BLE", "BLE Scanner"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aleksandar Dimitrov",
+      "email": "admin@sharkydog.info"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "sharkydog/private-emitter": "^1.0",
+    "sharkydog/ble-advertisment": "^1.0",
+    "sharkydog/bluez-wrappers": "^1.0",
+    "react/event-loop": "^1.5"
+  },
+  "suggest": {
+    "sharkydog/message-broker": "Connect BLE scanner to a message broker"
+  },
+  "autoload": {
+    "psr-4": {
+      "SharkyDog\\BlueZ\\LE\\": "src/"
+    }
+  }
+}
